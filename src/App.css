@@ -128,3 +128,16 @@ div.post-page div.author {
   font-size: 0.7rem;
   font-weight: bold;
 }
+
+div.edit-row {
+  text-align: center;
+}
+
+div.post-page a.edit-btn {
+  background-color: #333;
+  display: inline-block;
+  color: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  text-decoration: none;
+}

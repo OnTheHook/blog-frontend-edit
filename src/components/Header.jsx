@@ -4,12 +4,12 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import { UserContext } from "../UserContext";
 
+axios.defaults.withCredentials = true;
+
 export default function Header() {
   const { userInfo, setUserInfo } = useContext(UserContext);
   const [data, setData] = useState(null);
   // const [error, setError] = useState("");
-
-  axios.defaults.withCredentials = true;
 
   const fetchProtectedData = async () => {
     const token = Cookies.get("jwt");
